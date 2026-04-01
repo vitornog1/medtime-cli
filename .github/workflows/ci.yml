@@ -11,19 +11,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 📥 Clonar repositório
-      uses: actions/checkout@v3
+      - name: 🚀 Clonar repositório
+        uses: actions/checkout@v4 # Atualizado para v4
 
-    - name: ⚙️ Configurar .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '10.0.x'
+      - name: ⚙️ Configurar .NET
+        uses: actions/setup-dotnet@v4 # Atualizado para v4
+        with:
+          dotnet-version: '10.0.x'
 
-    - name: 📦 Restaurar dependências
-      run: dotnet restore
+      - name: 🧹 Limpar solução
+        run: dotnet clean # Adicionado para evitar duplicidade de arquivos na pasta obj
 
-    - name: 🔨 Build
-      run: dotnet build --no-restore
+      - name: 📦 Restaurar dependências
+        run: dotnet restore
 
-    - name: 🧪 Rodar testes
-      run: dotnet test --no-build --verbosity normal
+      - name: 🔨 Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: 🧪 Rodar testes
+        run: dotnet test --configuration Release --no-build --verbosity normal
