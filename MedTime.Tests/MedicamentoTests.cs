@@ -1,5 +1,7 @@
 using MedTime.Models;
+using Xunit;
 
+namespace MedTime.Tests;
 public class MedicamentoTests
 {
     [Fact]

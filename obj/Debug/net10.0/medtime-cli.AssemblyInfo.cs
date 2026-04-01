@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("medtime-cli")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f366b00d7874e31c470413b20e39d0db68ac5d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18d2e155d9469a32ceaca44c606744f9e4c32927")]
 [assembly: System.Reflection.AssemblyProductAttribute("medtime-cli")]
 [assembly: System.Reflection.AssemblyTitleAttribute("medtime-cli")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

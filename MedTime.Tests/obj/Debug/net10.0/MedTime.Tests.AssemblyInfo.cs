@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MedTime.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3b94f05bc39fd552c550629dc6fa91d2a87dba2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18d2e155d9469a32ceaca44c606744f9e4c32927")]
 [assembly: System.Reflection.AssemblyProductAttribute("MedTime.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MedTime.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
