@@ -1,0 +1,14 @@
+C:\Users\vitor.nogueira\Desktop\medtime-cli\bin\Debug\net10.0\medtime-cli.exe
+C:\Users\vitor.nogueira\Desktop\medtime-cli\bin\Debug\net10.0\medtime-cli.deps.json
+C:\Users\vitor.nogueira\Desktop\medtime-cli\bin\Debug\net10.0\medtime-cli.runtimeconfig.json
+C:\Users\vitor.nogueira\Desktop\medtime-cli\bin\Debug\net10.0\medtime-cli.dll
+C:\Users\vitor.nogueira\Desktop\medtime-cli\bin\Debug\net10.0\medtime-cli.pdb
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.AssemblyInfoInputs.cache
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.AssemblyInfo.cs
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.csproj.CoreCompileInputs.cache
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.dll
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\refint\medtime-cli.dll
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.pdb
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.genruntimeconfig.cache
+C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\ref\medtime-cli.dll
