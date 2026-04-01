@@ -1,5 +1,0 @@
-C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.AssemblyInfoInputs.cache
-C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.AssemblyInfo.cs
-C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.csproj.CoreCompileInputs.cache
-C:\Users\vitor.nogueira\Desktop\medtime-cli\obj\Debug\net10.0\medtime-cli.sourcelink.json
