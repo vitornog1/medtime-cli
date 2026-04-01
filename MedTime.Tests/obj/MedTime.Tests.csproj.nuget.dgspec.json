@@ -399,6 +399,10 @@
               "target": "Package",
               "version": "[17.14.1, )"
             },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"

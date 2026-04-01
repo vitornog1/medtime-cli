@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "B0nYCLngjAU=",
+  "dgSpecHash": "yYIZW3DIXcQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\vitor.nogueira\\Desktop\\medtime-cli\\MedTime.Tests\\MedTime.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vitor.nogueira\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\vitor.nogueira\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
     "C:\\Users\\vitor.nogueira\\.nuget\\packages\\microsoft.net.test.sdk\\17.14.1\\microsoft.net.test.sdk.17.14.1.nupkg.sha512",
     "C:\\Users\\vitor.nogueira\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.14.1\\microsoft.testplatform.objectmodel.17.14.1.nupkg.sha512",
