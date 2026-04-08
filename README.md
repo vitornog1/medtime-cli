@@ -30,7 +30,7 @@ A aplicação permite cadastrar medicamentos, listar e marcar como tomados.
 ## 🛠️ Tecnologias
 - C#
 - .NET
-- xUnit
+
 
 ## ▶️ Como executar
 ```bash
