@@ -7,7 +7,6 @@ Professor: Romes Heriberto Pires de Araujo
 
 
 # 💊 MedTime CLI
->>>>>>> 31d92b820658e2a3d0a9fcb62e0980004dbd8cb5
 
 ##  Descrição
 Aplicação de linha de comando para controle de medicamentos e horários, voltada principalmente para idosos.
