@@ -1,5 +1,6 @@
 ﻿using System;
 using MedTime.Services;
+using MedTime.Tests;
 
 var service = new MedicamentoService();
 
@@ -10,6 +11,7 @@ while (true)
     Console.WriteLine("2 - Listar medicamentos");
     Console.WriteLine("3 - Marcar como tomado");
     Console.WriteLine("4 - Ver pendentes");
+    Console.WriteLine("9 - Rodar teste");
     Console.WriteLine("0 - Sair");
 
     var opcao = Console.ReadLine();
@@ -39,6 +41,11 @@ while (true)
 
         case "4":
             service.ListarPendentes();
+            break;
+
+        case "9":
+            // 👇 AQUI CHAMA O TESTE
+            MedicamentoTests.DeveCriarMedicamento();
             break;
 
         case "0":

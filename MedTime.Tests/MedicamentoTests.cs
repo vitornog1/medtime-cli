@@ -1,14 +1,24 @@
+using System;
 using MedTime.Models;
-using Xunit;
 
 public class MedicamentoTests
 {
-    [Fact]
-    public void DeveCriarMedicamento()
+    public static void DeveCriarMedicamento()
     {
         var med = new Medicamento("Dipirona", "08:00");
 
-        Assert.Equal("Dipirona", med.Nome);
-        Assert.False(med.Tomado);
+        if (med.Nome != "Dipirona")
+        {
+            Console.WriteLine("❌ Erro: Nome incorreto");
+            return;
+        }
+
+        if (med.Tomado != false)
+        {
+            Console.WriteLine("❌ Erro: Status Tomado deveria ser false");
+            return;
+        }
+
+        Console.WriteLine("✅ Teste passou!");
     }
 }

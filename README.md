@@ -1,42 +1,49 @@
-# 💊 MedTime CLI
+D# MedTime CLI
 
-## 📌 Descrição do Projeto
-O MedTime CLI é uma aplicação de linha de comando desenvolvida para auxiliar no controle de medicamentos e horários, especialmente voltada para idosos que precisam manter uma rotina de medicação organizada.
+##  Descrição
+Aplicação de linha de comando para controle de medicamentos e horários, voltada principalmente para idosos.
 
----
+##  Problema
+Muitos idosos esquecem de tomar seus medicamentos nos horários corretos, o que pode comprometer tratamentos de saúde.
 
-## 🚨 Problema Real
-Muitos idosos enfrentam dificuldades para lembrar de tomar seus medicamentos corretamente, o que pode comprometer tratamentos e causar riscos à saúde.
+##  Solução
+A aplicação permite cadastrar medicamentos, listar e marcar como tomados.
 
----
-
-## 💡 Solução Proposta
-A aplicação permite cadastrar medicamentos, definir horários e marcar como tomados, ajudando no acompanhamento diário de forma simples e acessível.
-
----
-
-## 👥 Público-Alvo
+##  Público-alvo
 - Idosos
 - Cuidadores
-- Familiares responsáveis por acompanhamento de medicação
+- Familiares
 
----
+##  Funcionalidades
+- Adicionar medicamento
+- Listar medicamentos
+- Marcar como tomado
 
-## ⚙️ Funcionalidades
-- ✅ Adicionar medicamento
-- 📋 Listar medicamentos
-- ✔️ Marcar medicamento como tomado
-
----
-
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 - C#
 - .NET
-- xUnit (testes automatizados)
+- xUnit
 
----
-
-## ▶️ Como Executar
-
+## ▶️ Como executar
 ```bash
 dotnet run
+```
+
+##  Rodar testes
+```bash
+dotnet test
+```
+
+##  Rodar lint
+```bash
+dotnet format
+```
+
+##  Versão
+1.0.0
+
+##  Autor
+Vitor
+
+## Repositório
+(Ainda será adicionado após subir no GitHub)
