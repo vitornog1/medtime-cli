@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-D# MedTime CLI
+ 
+ MedTime CLI - Bootcamp II - Etapa Inicial
 =======
 Nome: Vítor Nogueira Lourenço
 RA: 22503265
@@ -51,7 +51,7 @@ dotnet format
 1.0.0
 
 ##  Autor
-Vitor
+Vítor Nogueira Lourenço
 
 ## Repositório
-(Ainda será adicionado após subir no GitHub)
+https://github.com/vitornog1/medtime-cli
