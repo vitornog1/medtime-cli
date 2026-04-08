@@ -1,3 +1,8 @@
+Nome: Vítor Nogueira Lourenço
+RA: 22503265
+Professor: Romes Heriberto Pires de Araujo
+
+
 # 💊 MedTime CLI
 
 ## 📌 Descrição do Projeto
