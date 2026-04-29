@@ -19,9 +19,6 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: 🧹 Limpar solução
-        run: dotnet clean # Adicionado para evitar duplicidade de arquivos na pasta obj
-
       - name: 📦 Restaurar dependências
         run: dotnet restore
 
