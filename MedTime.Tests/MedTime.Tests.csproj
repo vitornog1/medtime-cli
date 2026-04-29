@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\medtime-cli\medtime-cli.csproj" />
+    <ProjectReference Include="..\medtime-cli.csproj" />
   </ItemGroup>
 
 </Project>

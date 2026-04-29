@@ -297,6 +297,16 @@
             "related": ".xml"
           }
         }
+      },
+      "medtime-cli/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/medtime-cli.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/medtime-cli.dll": {}
+        }
       }
     }
   },
@@ -667,12 +677,18 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "medtime-cli/1.0.0": {
+      "type": "project",
+      "path": "../medtime-cli.csproj",
+      "msbuildProject": "../medtime-cli.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.NET.Test.Sdk >= 17.14.1",
-      "coverlet.collector >= 6.0.4"
+      "coverlet.collector >= 6.0.4",
+      "medtime-cli >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -707,7 +723,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\vitor.nogueira\\Desktop\\medtime-cli\\medtime-cli.csproj": {
+              "projectPath": "C:\\Users\\vitor.nogueira\\Desktop\\medtime-cli\\medtime-cli.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
