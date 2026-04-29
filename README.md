@@ -30,7 +30,7 @@ A aplicação permite cadastrar medicamentos, listar e marcar como tomados.
 ## 🛠️ Tecnologias
 - C#
 - .NET
-- xUnit
+
 
 ## ▶️ Como executar
 ```bash
@@ -54,4 +54,5 @@ dotnet format
 Vítor Nogueira Lourenço
 
 ## Repositório
+https://github.com/vitornog1/medtime-cli
 https://github.com/vitornog1/medtime-cli
