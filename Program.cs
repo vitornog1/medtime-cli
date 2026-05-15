@@ -2,53 +2,71 @@
 using MedTime.Services;
 using MedTime.Tests;
 
-var service = new MedicamentoService();
-
-while (true)
+internal class Program
 {
-    Console.WriteLine("\n=== MedTime CLI ===");
-    Console.WriteLine("1 - Cadastrar medicamento");
-    Console.WriteLine("2 - Listar medicamentos");
-    Console.WriteLine("3 - Marcar como tomado");
-    Console.WriteLine("4 - Ver pendentes");
-    Console.WriteLine("9 - Rodar teste");
-    Console.WriteLine("0 - Sair");
-
-    var opcao = Console.ReadLine();
-
-    switch (opcao)
+    private static async Task Main(string[] args)
     {
-        case "1":
-            Console.Write("Nome: ");
-            var nome = Console.ReadLine();
+        var service = new MedicamentoService();
 
-            Console.Write("Horário: ");
-            var horario = Console.ReadLine();
+        while (true)
+        {
+            Console.WriteLine("\n=== MedTime CLI ===");
+            Console.WriteLine("1 - Cadastrar medicamento");
+            Console.WriteLine("2 - Listar medicamentos");
+            Console.WriteLine("3 - Marcar como tomado");
+            Console.WriteLine("5 - Buscar cidade por CEP");
+            Console.WriteLine("4 - Ver pendentes");
+            Console.WriteLine("9 - Rodar teste");
+            Console.WriteLine("0 - Sair");
 
-            service.Adicionar(nome, horario);
-            break;
+            var opcao = Console.ReadLine();
 
-        case "2":
-            service.Listar();
-            break;
+            switch (opcao)
+            {
+                case "1":
+                    Console.Write("Nome: ");
+                    var nome = Console.ReadLine();
 
-        case "3":
-            Console.Write("Nome do medicamento: ");
-            var nomeTomado = Console.ReadLine();
+                    Console.Write("Horário: ");
+                    var horario = Console.ReadLine();
 
-            service.MarcarComoTomado(nomeTomado);
-            break;
+                    service.Adicionar(nome, horario);
+                    break;
 
-        case "4":
-            service.ListarPendentes();
-            break;
+                case "2":
+                    service.Listar();
+                    break;
 
-        case "9":
-            // 👇 AQUI CHAMA O TESTE
-            MedicamentoTests.DeveCriarMedicamento();
-            break;
+                case "3":
+                    Console.Write("Nome do medicamento: ");
+                    var nomeTomado = Console.ReadLine();
 
-        case "0":
-            return;
+                    service.MarcarComoTomado(nomeTomado);
+                    break;
+
+                case "4":
+                    service.ListarPendentes();
+                    break;
+
+
+                case "5":
+                    Console.Write("Digite o CEP: ");
+                    var cep = Console.ReadLine();
+
+                    var cepService = new CepService();
+                    var cidadeNome = await cepService.BuscarEndereco(cep);
+
+                    Console.WriteLine($"\nCidade encontrada: {cidadeNome}");
+                    break;
+
+                case "9":
+                    // 👇 AQUI CHAMA O TESTE
+                    MedicamentoTests.DeveCriarMedicamento();
+                    break;
+
+                case "0":
+                    return;
+            }
+        }
     }
 }

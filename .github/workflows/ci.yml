@@ -12,18 +12,18 @@ jobs:
 
     steps:
       - name: 🚀 Clonar repositório
-        uses: actions/checkout@v4 # Atualizado para v4
+        uses: actions/checkout@v4
 
       - name: ⚙️ Configurar .NET
-        uses: actions/setup-dotnet@v4 # Atualizado para v4
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
 
-      - name: 🧹 Limpar solução
-        run: dotnet clean # Adicionado para evitar duplicidade de arquivos na pasta obj
-
-      - name: 📦 Restaurar dependências
-        run: dotnet restore
+      # ADICIONE ESTE PASSO AQUI EMBAIXO 👇
+      - name: 🧹 Limpar NuGet e Restaurar
+        run: |
+          dotnet nuget locals all --clear
+          dotnet restore
 
       - name: 🔨 Build
         run: dotnet build --configuration Release --no-restore

@@ -44,6 +44,10 @@ Muitos idosos esquecem de tomar seus medicamentos nos horários corretos, o que 
 ##  Solução
 A aplicação permite cadastrar medicamentos, listar e marcar como tomados.
 
+## 🌐 Integração com API
+
+A aplicação consome a API pública ViaCEP para buscar informações de endereço a partir do CEP.
+
 ##  Público-alvo
 - Idosos
 - Cuidadores
@@ -81,4 +85,5 @@ dotnet format
 Vítor Nogueira Lourenço
 
 ## Repositório
+https://github.com/vitornog1/medtime-cli
 https://github.com/vitornog1/medtime-cli
