@@ -59,10 +59,6 @@ internal class Program
                     Console.WriteLine($"\nCidade encontrada: {cidadeNome}");
                     break;
 
-                case "8":
-                      CepServiceTests.TesteBuscarCep();
-                      break;
-
                 case "9":
                     // 👇 AQUI CHAMA O TESTE
                     MedicamentoTests.DeveCriarMedicamento();
