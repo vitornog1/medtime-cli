@@ -1,84 +1,97 @@
- 
- MedTime CLI - Bootcamp II - Etapa Intermediária
-=======
-Nome: Vítor Nogueira Lourenço
-RA: 22503265
-Professor: Romes Heriberto Pires de Araujo
+# MEDTIME CLI
 
-## 🚀 Entrega Intermediária (Links)
-- **Repositório GitHub:** [https://github.com/vitornog1/medtime-cli](https://github.com/vitornog1/medtime-cli)
-- **Link do Deploy (Release v1.0.0):** https://github.com/vitornog1/medtime-cli/releases/tag/v1.0.0
+Sistema de gerenciamento de medicamentos desenvolvido em C# (.NET) para auxiliar usuários no controle de horários e acompanhamento da medicação.
 
-- # 🛠️ Evolução (Etapa Intermediária)
-Nesta fase, o projeto recebeu melhorias técnicas de integração e automação:
-- **Integração com API:** Consumo da API **ViaCEP** para localização automática de farmácias/endereços.
-- **Testes de Integração:** Implementação de testes automatizados validando o fluxo de ponta a ponta com serviços externos.
-- **CI/CD:** Pipeline do GitHub Actions configurado para Build, Restore e Testes automáticos a cada commit.
-- **Deploy:** Versão publicada oficialmente via GitHub Releases.
+## Funcionalidades
 
-## ✨ Funcionalidades
-- [x] Cadastrar medicamentos e horários
-- [x] Listar medicamentos cadastrados
-- [x] Marcar medicamentos como tomados
-- [x] **Buscar endereço por CEP** (Integração API)
-- [x] **Relatório de pendências**
+* Cadastro de medicamentos
+* Listagem de medicamentos cadastrados
+* Marcação de medicamentos como tomados
+* Visualização de medicamentos pendentes
+* Consulta de cidade por CEP utilizando a API ViaCEP
+* Armazenamento de dados em banco PostgreSQL na nuvem através do Supabase
+* Testes automatizados
+* Integração contínua com GitHub Actions
 
-## 🧪 Tecnologias e Ferramentas
-- **Linguagem:** C# (.NET 10)
-- **Integração:** HttpClient (ViaCEP API)
-- **Testes:** xUnit
-- **Automação:** GitHub Actions (YAML)
+## Tecnologias Utilizadas
 
-## ▶️ Como executar
+* C#
+* .NET 10
+* Supabase
+* PostgreSQL
+* ViaCEP API
+* GitHub Actions
+* xUnit
+
+## Estrutura do Projeto
+
+```text
+medtime-cli/
+│
+├── Models/
+├── Services/
+├── MedTime.Tests/
+├── .github/workflows/
+├── Program.cs
+└── README.md
+```
+
+## Como Executar
+
+Clone o repositório:
+
 ```bash
-dotnet run --project medtime-cli
+git clone https://github.com/vitornog1/medtime-cli.git
+```
 
-# 💊 MedTime CLI
+Acesse a pasta:
 
-##  Descrição
-Aplicação de linha de comando para controle de medicamentos e horários, voltada principalmente para idosos.
+```bash
+cd medtime-cli
+```
 
-##  Problema
-Muitos idosos esquecem de tomar seus medicamentos nos horários corretos, o que pode comprometer tratamentos de saúde.
+Execute o projeto:
 
-##  Solução
-A aplicação permite cadastrar medicamentos, listar e marcar como tomados.
-
-##  Público-alvo
-- Idosos
-- Cuidadores
-- Familiares
-
-##  Funcionalidades
-- Adicionar medicamento
-- Listar medicamentos
-- Marcar como tomado
-
-## 🛠️ Tecnologias
-- C#
-- .NET
-
-
-## ▶️ Como executar
 ```bash
 dotnet run
 ```
 
-##  Rodar testes
+## Menu Principal
+
+```text
+1 - Cadastrar medicamento
+2 - Listar medicamentos
+3 - Marcar como tomado
+4 - Ver pendentes
+5 - Buscar cidade por CEP
+9 - Rodar teste
+0 - Sair
+```
+
+## Banco de Dados
+
+O projeto utiliza Supabase (PostgreSQL em nuvem) para persistência dos medicamentos cadastrados.
+
+## API Externa
+
+Integração com a API ViaCEP para consulta de endereços a partir do CEP informado pelo usuário.
+
+## Testes
+
+Executar os testes:
+
 ```bash
 dotnet test
 ```
 
-##  Rodar lint
-```bash
-dotnet format
-```
+## CI/CD
 
-##  Versão
-1.0.0
+O projeto utiliza GitHub Actions para execução automática de build e testes a cada push realizado no repositório.
 
-##  Autor
-Vítor Nogueira Lourenço
+## Autor
+
+Vítor Nogueira
 
 ## Repositório
+
 https://github.com/vitornog1/medtime-cli
